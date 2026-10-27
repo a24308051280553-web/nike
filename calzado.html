@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NIKE - Calzado</title>
+    
+    <!-- ESTILOS CSS -->
+    <style>
+        /* Configuración general de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F9FA;
+            color: #0F0F0F;
+        }
+
+        /* 1. ENCABEZADO */
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #E0E0E0;
+        }
+
+        header h1 {
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* 2. BARRA DE NAVEGACIÓN */
+        nav {
+            background-color: #333333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #E6F0FA;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffca28; /* Cambia a amarillo al pasar el ratón */
+        }
+
+        /* 3. CUERPO PRINCIPAL */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* CATÁLOGO DE PRODUCTOS */
+        .catalogo {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .producto {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 45%;
+            box-sizing: border-box;
+            background-color: #fafafa;
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .precio {
+            font-weight: bold;
+            color: #28a745;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Botón de Comprar */
+        .btn-comprar {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #333333;
+        }
+
+        /* 4. FOOTER (PIE DE PÁGINA) */
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO -->
+    <header>
+        <h1>NIKE</h1>
+        <p>Catálogo de Calzado Deportivo y Urbano</p>
+    </header>
+
+    <!-- 2. BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="calzado.html">Calzado</a>
+        <a href="ropa.html">Ropa</a>
+    </nav>
+
+    <!-- 3. CUERPO DE LA PÁGINA -->
+    <main>
+
+        <section id="calzado">
+            <h2>Colección de Calzado</h2>
+            <p>Descubre nuestra variedad en tenis deportivos y urbanos. Diseñados para brindar el máximo confort, durabilidad y estilo en cada paso.</p>
+            
+            <!-- Galería de Calzado -->
+            <div class="catalogo">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="tenis.png" alt="Tenis Nike">
+                    <h3>Nike Air Classic</h3>
+                    <p>Diseño icónico con máxima amortiguación para el día a día.</p>
+                    <p class="precio">$2,199 MXN</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="nike.png" alt="Tenis Nike Runner Pro">
+                    <h3>Nike Runner Pro</h3>
+                    <p>Ligeros y transpirables, ideales para alto rendimiento.</p>
+                    <p class="precio">$1,899 MXN</p>
+                    <button class="btn-comprar">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. FOOTER (PIE DE PÁGINA) -->
+    <footer>
+        <p>Carlos Oziel Hernandez Garcia | 5°I | 0553</p>
+    </footer>
+
+</body>
+</html>
